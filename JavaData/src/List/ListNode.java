@@ -130,7 +130,7 @@ public class ListNode {
         while(head !=null) {
             nextNode = head.getNext();
             head.setNext(temp);
-            temp=head;
+            temp=head;  // 이전의 헤드를 임시 템프에 넣는다고 생각
             head=nextNode;
         }
         return temp;
